@@ -18,7 +18,7 @@ public class linkList {
 		System.out.println("LinkedList :: " + ll);
 
 		// pop the list
-		System.out.println("Pop element in the list :: " + ll.pop());
+		System.out.println("Remove element in the list :: " + ll.removeLast());
 
 		// print the list
 		System.out.println("LinkedList :: " + ll);
