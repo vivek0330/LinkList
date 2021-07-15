@@ -20,7 +20,6 @@ public class LinkList {
 
 	public Node tail = null;
 
-	// uc2 :method to append data(insert at last position)
 	public Node insert(int data) {
 		Node newNode = new Node(data);
 		if (head == null) {
@@ -53,6 +52,32 @@ public class LinkList {
 			}
 			newNode.next = nodeAtPreviousIndex.next;
 			nodeAtPreviousIndex.next = newNode;
+		}
+	}
+	
+	public void  pop() 
+	 {
+		int popData = 0;
+		if (head == null) 
+		{
+			System.out.println("Stack is empty");
+		}
+		 popData = head.data;
+		 head = head.next;	
+	 }
+
+	// Delete at particular position
+	public void popAtIndex(int index) {
+		if (index == 0) {
+			pop();
+		} else {
+			Node prevNode = head;
+			Node currNode = head;
+			for (int i = 0; i < index; i++) {
+				prevNode = currNode;
+				currNode = currNode.next;
+			}
+			prevNode.next = currNode.next;
 		}
 	}
 
