@@ -13,8 +13,15 @@ public class linkList {
 		ll.add(56);
 		ll.add(70);
 		ll.add(1, 30);
-		System.out.println(ll);
 
+		// print the list
+		System.out.println("LinkedList :: " + ll);
+
+		// pop the list
+		System.out.println("Pop element in the list :: " + ll.pop());
+
+		// print the list
+		System.out.println("LinkedList :: " + ll);
 	}
 
 }
